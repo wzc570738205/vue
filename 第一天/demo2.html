@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="box1">
+		<input type="text" name="" v-model="info">{{info}}<button @click="get()">haha</button>
+
+		<ul>
+			<li v-for="(item,index) in list">{{item}}  {{index}}<button @click="del(index)">del</button></li>
+		</ul>
+		
+	</div>
+
+
+
+
+
+
+
+
+	<script src="js/vue.js"></script>
+	<script type="text/javascript">
+		var app1 = new Vue({
+			el:"#box1",
+			data:{//数据
+				info:"",
+				list:["a"]
+			},
+			methods:{//方法
+				get:function(){
+					this.list.push(this.info);
+					this.info="";
+				},
+				del:function(index){
+					this.list.splice(index,1);
+				}
+			}
+		})
+	</script>
+</body>
+</html>

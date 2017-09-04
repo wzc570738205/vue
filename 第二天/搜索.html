@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<div id="box1" >
+          百度  <input type="" name="" v-model="baidu">
+           一号店APP <input type="" name="" v-model="one"><br>
+           淘宝 <input type="" name="" v-model="taobao">
+            <ul>
+            	<li v-for="i in list">{{i}}</li>
+            </ul>
+	</div>
+
+
+	<script src="../js/vue.js"></script>
+	<script src="../js/vue-resource.js"></script>
+	<script type="text/javascript">
+	(function(){
+			var app1 = new Vue({
+			el:"#box1",
+			data:{//数据
+				baidu:"",
+				one:"",
+				taobao:"",
+				list:[
+				],
+				list2:[]
+			},
+			methods:{//方法
+				
+			},
+			computed:{
+				
+			},
+			watch:{
+				
+			}
+		})
+			
+app1.$watch("baidu",function(newval){
+	var api="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+newval;
+	this.$http.jsonp(api,{jsonp:"cb"}).then(function(data){
+              this.list=data.body.s;
+             // console.log(data.body.s);
+	},function(err){
+		console.log(err)
+	})
+});
+
+app1.$watch("one",function(newval){
+	var api="http://search.m.yhd.com/search/getSmartKeyword/?keyword"+newval;
+	this.$http.jsonp(api).then(function(data){
+              this.list=data.body.hotSearchKeywords;
+              //console.log(data.body.hotSearchKeywords);
+	},function(err){
+		console.log(err)
+	})
+})
+
+//https://suggest.taobao.com/sug?code=utf-8&q=
+
+
+	})()
+		
+	</script>
+</body>
+</html>

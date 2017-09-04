@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="box1">
+		<input type="text" name="" v-model="first">
+		<input type="text" name="" v-model="last">
+		{{full}}
+	</div>
+
+
+	<script src="js/vue.js"></script>
+	<script type="text/javascript">
+		var app1 = new Vue({
+			el:"#box1",
+			data:{//数据
+				first:"aaa",
+				last:"bbb",
+				full:""
+			},
+			methods:{//方法
+				
+			},
+			computed:{
+				
+			},
+			watch:{
+				first:function (val) {
+					this.full =val+ this.last;
+				},
+				last:function (val) {
+					this.full =this.first+val;
+				}
+			}
+		})
+		
+	</script>
+</body>
+</html>

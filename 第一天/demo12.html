@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="shortcut icon" href="https://static.segmentfault.com/v-598e31cb/global/img/favicon.ico">
+</head>
+<body>
+	<div id="box1">
+		<button @click="btn">点击</button>
+	</div>
+
+
+	<script src="js/vue.js"></script>
+	<script src="js/vue-resource.js"></script>
+
+	<script type="text/javascript">
+	window.onload  =function(){
+
+		Vue.filter("resere",function(val){
+			return val.split("").reverse().join("")
+
+		})
+
+		var app1 = new Vue({
+				el:"#box1",
+				data:{//数据
+					
+				},
+				methods:{//方法
+					
+				},
+				computed:{
+					btn:function(){
+						this.$http.get("data/f1.json").then(function(data){
+							console.log(data.body.box[0].info)
+						},function(){
+							console.log("失败")
+						})
+					}
+				},
+				watch:{
+					
+				}
+			})
+	}
+	
+	</script>
+</body>
+</html>

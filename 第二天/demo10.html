@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        #box1{
+            width: 100px;
+            height: 100px;
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+<div id="box1" >
+        <v-header></v-header>
+        <v-footer></v-footer>
+</div>
+<template id="foot">
+    <div>
+        <h1>哈哈哈</h1>
+        <h1>哈哈哈</h1>
+        <h1>哈哈哈</h1>
+        <h1>{{aaa}}</h1>
+        <h1>{{msg}}</h1>
+        <button @click="show">弹起</button>
+    </div>
+</template>
+
+<script src="../js/vue.js"></script>
+<script type="text/javascript">
+//自定义组件(1.0写法)
+var Header = Vue.extend({
+        template:`<h3>12345</h3>`
+})
+//注册组件（1.0写法）
+Vue.component("v-header",Header);
+
+
+//-------------------------------//
+//2.0定义组件
+/*var footer ={
+    template:`<h3>12345</h3>`
+};*/
+//Vue.component("v-footer",footer);
+
+
+    var app1 = new Vue({
+        el:"#box1",
+        data:{//数据
+
+        },
+        methods:{//方法
+           
+        },
+        computed:{
+
+        },
+        watch:{
+
+        },
+       /* components:{
+            "v-footer":footer
+        },*/
+        components:{
+            "v-footer":{
+              template:'#foot',
+              data:function(){
+                return{
+                    msg:123,
+                    aaa:54
+                }
+              },
+              methods:{
+                show(){
+                    console.log(this.msg)
+                }
+              }
+            }
+        }
+    })
+
+</script>
+</body>
+</html>

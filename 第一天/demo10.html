@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="box1">
+		<span v-if="ok">111</span>
+		<span v-show="ok">222</span>
+		<div v-if="Math.random()>0.5">大于0.5</div>
+		<div v-else>小于0。5</div>
+	</div>
+
+
+	<script src="js/vue.js"></script>
+	<script type="text/javascript">
+		var app1 = new Vue({
+			el:"#box1",
+			data:{//数据
+				first:"aaa",
+				last:"bbb",
+				ok:false
+			},
+			methods:{//方法
+				
+			},
+			computed:{
+				
+			},
+			watch:{
+				
+			}
+		})
+		
+	</script>
+</body>
+</html>

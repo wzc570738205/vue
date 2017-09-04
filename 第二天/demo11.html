@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        
+    </style>
+</head>
+<body>
+<div id="box1" >
+        <v-header></v-header>
+        <v-footer></v-footer>
+</div>
+<template id="foot">
+    <div>
+        <h1>哈哈哈</h1>
+        <h1>哈哈哈</h1>
+        <h1>哈哈哈</h1>
+        <h1>{{aaa}}</h1>
+        <h1>{{msg}}</h1>
+         <h1>1111</h1>
+       <button @click="get">getchild</button>
+        <v-nav v-bind:asd="msg" ref="my"></v-nav>
+        <button @click="show">弹起</button>
+    </div>
+</template>
+<template id="nav">
+    <div>
+        滴滴滴滴
+        {{asd}}
+    </div>
+</template>
+<script src="../js/vue.js"></script>
+<script type="text/javascript">
+//自定义组件(1.0写法)
+var Header = Vue.extend({
+        template:`<h3>12345</h3>`
+})
+//注册组件（1.0写法）
+Vue.component("v-header",Header);
+
+
+//-------------------------------//
+//2.0定义组件
+/*var footer ={
+    template:`<h3>12345</h3>`
+};*/
+//Vue.component("v-footer",footer);
+
+var str=""
+    var app1 = new Vue({
+        el:"#box1",
+        data:{//数据
+
+        },
+        methods:{//方法
+           
+        },
+        computed:{
+
+        },
+        watch:{
+
+        },
+       /* components:{
+            "v-footer":footer
+        },*/
+        components:{
+            "v-footer":{
+              template:'#foot',
+              data:function(){
+                return{
+                    msg:"foot的数据",
+                    aaa:5,
+                    ok:"aaaaa"
+                }
+              },
+              methods:{
+                show(){
+                    console.log(this.msg)
+                },
+                get(){
+                    console.log(this.$refs.my.name)
+                }
+              },
+              components:{
+                "v-nav":{
+                    props:['asd'],
+                    template:"#nav",
+                    data:function(){
+                       return{
+                         name:"自己"
+                       } 
+                    },
+                    methods:{
+
+                    }
+                
+                }
+              }
+            }
+        }
+    })
+
+</script>
+</body>
+</html>

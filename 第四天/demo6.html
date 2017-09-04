@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+      
+    </style>
+</head>
+<body>
+<div id="box1" >
+    <router-link to="home">首页</router-link>
+    <router-link to="user">用户</router-link>
+
+    <router-view></router-view>
+</div>
+
+<template id="new">
+    <div>
+        <h2>用户</h2>
+<!--         <router-link to="/user/{{username}}">child111</router-link>
+         -->     <router-link to="/user/child2">child222</router-link> 
+        <hr>
+        <router-view></router-view>
+    </div>
+</template>
+<template id="child">
+    <div>
+        用户详情页{{$route.params.username}}
+    </div>
+</template>
+
+<script src="../js/vue.js"></script>
+<script src="../js/vue-router.js"></script>
+
+<script type="text/javascript">
+var Home={
+    template:`<h2>this is Home page</h2>`
+}
+var User={
+    template:"#new",
+    data(){
+        return{
+            username:"tom"
+        }
+    }
+}
+var Child={
+    template:"#child"
+}
+const router = new VueRouter({
+    routes:[
+    {
+        path:"/home",
+        component:Home
+    },
+    {
+        path:"/user",
+        component:User,
+        "children":[
+        {
+            path:":username",
+            component:Child
+        }
+        ]
+    },
+    {
+        path:"*",
+        redirect:"/home"/*默认到首页*/
+    }
+    ]
+})
+    var app1 = new Vue({
+        router:router,
+        el:"#box1",
+        data:{//数据
+
+        },
+        methods:{//方法
+           
+        },
+        computed:{
+
+        },
+        watch:{
+
+        },
+        components:{
+           
+        }
+    })
+
+</script>
+</body>
+</html>

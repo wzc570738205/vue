@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+      
+    </style>
+</head>
+<body>
+<div id="box1" >
+    <router-link to="/home">home</router-link>
+    <router-link to="/new">new</router-link>
+    <router-link to="/newdetail/123">newdetail</router-link>
+
+    <router-view></router-view>
+</div>
+
+<template id="newdetail">
+    <div>
+        <div>这是详情页</div>
+        <p>{{$route.params.value}}</p>
+    </div>
+</template>
+
+<script src="../js/vue.js"></script>
+<script src="../js/vue-router.js"></script>
+
+<script type="text/javascript">
+var Home={
+    template:`<h2>this is Home page</h2>`
+}
+var News={
+    template:`<h2>this is News page</h2>`
+}
+var NewsDetail={
+    template:"#newdetail",
+    mounted(){
+        console.log(this.$route.params.value)  
+    }
+}
+const router = new VueRouter({
+    routes:[
+    {
+        path:"/home",
+        component:Home
+    },
+    {
+        path:"/new",
+        component:News
+    },
+    {
+        path:"/newdetail/:value",
+        component:NewsDetail
+    },
+    {
+        path:"*",
+        redirect:"/home"/*默认到首页*/
+    }
+    ]
+})
+    var app1 = new Vue({
+        router:router,
+        el:"#box1",
+        data:{//数据
+
+        },
+        methods:{//方法
+           
+        },
+        computed:{
+
+        },
+        watch:{
+
+        },
+        components:{
+           
+        }
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+       
+    </style>
+</head>
+<body>
+<div id="box1" >
+    <v-a></v-a>  
+    <v-b></v-b>  
+</div>
+<template id="a">
+<div>
+     <h1 @click="show">这是A</h1>
+</div>
+   
+</template>
+<template id="b">
+<div>
+    
+ <h1>这是B</h1>
+    <p>{{mb}}</p>
+
+</div>
+   
+</template>
+
+<script src="../js/vue.js"></script>
+<script type="text/javascript">
+var ev =new Vue();
+var a = {
+    template:"#a",
+    data(){
+        return{
+            msg:"来自aa的数据"
+        }
+    },
+    methods:{
+        show(  ){
+            ev.$emit("aaa",this.msg);
+        }
+    }
+}
+var b = {
+    template:"#b",
+    data(){
+        return{
+            mb:""
+        }
+    },
+    mounted(){
+        var that = this;
+            ev.$on("aaa",function(m){
+                console.log("来自b的数据");
+                console.log(m);
+                that.mb=m;
+                console.log(that.mb);
+
+            })
+    }
+
+}
+
+    var app1 = new Vue({
+        el:"#box1",
+        data:{//数据
+
+        },
+        methods:{//方法
+           
+        },
+        computed:{
+
+        },
+        watch:{
+
+        },
+     
+        components:{
+           "v-a":a,
+           "v-b":b
+        }
+    })
+
+</script>
+</body>
+</html>

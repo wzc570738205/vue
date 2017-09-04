@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="js/animate.css">
+    <style type="text/css"></style>
+</head>
+
+<body>
+    <div id="box1">
+        <input type="text" v-model="input">{{input}}
+        <div v-red>aaa</div>
+        <div v-green>aaa</div>
+        <div v-color="col">aaa</div>
+        <button @click="btn">btn</button>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script src="../js/vue-router.js"></script>
+    <script type="text/javascript">
+    Vue.directive('red',{
+        inserted(el){
+            el.style.background = 'red'
+        }
+    })
+    var app = new Vue({
+        el: "#box1",
+        data: {
+            input: 123,
+            col:"red"
+        },
+        methods: {
+            btn () {
+                this.col = "green"
+            }
+        },
+        directives:{
+            "green":{
+                inserted(el){
+                    el.style.background = 'green'
+                }
+            },
+            "color":function (el,binding) {
+                el.style.background = binding.value;
+            }
+        }
+    })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<div id="box1" >
+	<input type="checkbox" v-model="info">
+	<input type="checkbox" v-model="info">
+	<input type="checkbox" v-model="info">
+	<input type="checkbox" v-model="info">
+	<input type="checkbox" v-model="info">
+	<input type="checkbox" v-model="info">
+	<input type="checkbox" v-model="info">
+	<div v-show="info">asdad</div>
+	<input type="checkbox"  @click="ok">
+
+	</div>
+
+
+	<script src="../js/vue.js"></script>
+	<script type="text/javascript">
+		var app1 = new Vue({
+			el:"#box1",
+			data:{//数据
+				info:false
+			},
+			methods:{//方法
+				ok(){
+					
+					if(this.info==true){
+						this.info=false;
+					}else{
+						this.info=true;
+					}
+				}
+			},
+			computed:{
+				
+			},
+			watch:{
+				
+			}
+		})
+		
+	</script>
+</body>
+</html>

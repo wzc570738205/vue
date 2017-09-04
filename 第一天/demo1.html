@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="box1">
+		{{msg}}
+		<ul>
+			<li v-for="item in list2">
+				{{item.name}}
+				{{item.age}}
+			</li>
+		</ul>
+		<button v-on:click="get()">点击</button>
+		<button @click="get()">点击2</button><!-- v-on:click的简写是 @click -->
+	</div>
+
+
+
+
+
+
+
+
+	<script src="js/vue.js"></script>
+	<script type="text/javascript">
+		var app1 = new Vue({
+			el:"#box1",//绑定
+			data:{//数据
+				msg:"this is message",
+				list:[1,2,3,4,4],
+				list2:[
+                {
+                	name:"ad",
+                	age:"22"
+                },
+                   {
+                	name:"ad",
+                	age:"22"
+                },
+                   {
+                	name:"ad",
+                	age:"22"
+                },
+                   {
+                	name:"ad",
+                	age:"22"
+                }
+				]
+			},
+			methods:{//方法
+               get:function(){
+                   alert(this.msg)
+               }
+			}
+		})
+	</script>
+</body>
+</html>

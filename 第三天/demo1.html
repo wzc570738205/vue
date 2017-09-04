@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css"></style>
+</head>
+<body>
+    <div id="box1" >
+        <v-head>
+            <ul slot="pp">
+                <li>11</li>
+                <li>22</li>
+                <li>33</li>
+            </ul>
+        </v-head>
+         <v-head>
+           <p slot="pp">this is p</p>
+           <span slot="sp">this is span</span>
+        </v-head>
+    </div>
+
+    <template id="head">
+        <div>
+
+            <h1>{{msg}}</h1>
+            <slot name="pp"></slot>
+            <hr>
+            <slot name="sp"></slot>    
+        </div>
+
+    </template>
+
+    <script src="../js/vue.js"></script>
+    <script type="text/javascript">
+var head = {
+    template:"#head",
+    data(){
+        return{
+            msg:"this id heade"
+        }
+    },
+    methods:{
+
+    }
+}
+
+    var app1 = new Vue({
+        el:"#box1",
+        data:{//数据
+
+        },
+        methods:{//方法
+           
+        },
+        computed:{
+
+        },
+        watch:{
+
+        },
+        components:{
+           "v-head":head
+        }
+    })
+
+</script>
+</body>
+</html>

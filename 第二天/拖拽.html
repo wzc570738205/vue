@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+
+    <style type="text/css">
+
+		.box{
+			width: 100px;
+			height: 200px;
+			position: absolute;
+            background-color: red;
+
+		}
+	</style>
+</head>
+<body>
+	<div id="app" >
+	       <div class="box" v-drag></div>
+	       <div class="box" v-drag></div>
+	       <div class="box" v-drag></div>
+	       <div class="box" v-drag></div>
+	       <div class="box" v-drag></div>
+	       <div class="box" v-drag></div>
+	       <div class="box" v-drag></div>
+	       <div class="box" v-drag></div>
+	       <div class="box" v-drag></div>
+	       <div class="box" v-drag></div>
+	       <div class="box" v-drag></div>
+	       <div class="box" v-drag></div>
+	</div>
+
+
+	<script src="../js/vue.js"></script>
+	<script type="text/javascript">
+Vue.directive("drag",function(el){
+    el.onmousedown=function (e) {
+        var X = e.clientX - el.offsetLeft;
+        var Y = e.clientY - el.offsetTop;
+        document.onmousemove = function (e) {
+            var endx = e.clientX-X;
+            var endy = e.clientY-Y;
+            el.style.left=endx+"px"
+            el.style.top=endy+"px"
+        };
+
+    };
+    document.onmouseup = function () {
+        document.onmousemove = null;
+    }
+})
+		var app = new Vue({
+			el:"#app"
+
+		})
+		
+	</script>
+</body>
+</html>

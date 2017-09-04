@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#box1{
+			width: 100px;
+			height: 100px;
+			background: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<div id="box1" @click="show2()">
+		<button @click="show($event)">button</button>
+		<!-- 加stop也可以取消冒泡 -->
+		<!-- <button @click.stop="show($event)">button</button> -->
+	</div>
+
+
+	<script src="../js/vue.js"></script>
+	<script type="text/javascript">
+		var app1 = new Vue({
+			el:"#box1",
+			data:{//数据
+				
+			},
+			methods:{//方法
+				show(e){
+					alert(1);
+					console.log(e)
+					e.cancelBubble=true;
+				},
+				show2(){
+					alert(2)
+				}
+			},
+			computed:{
+				
+			},
+			watch:{
+				
+			}
+		})
+		
+	</script>
+</body>
+</html>

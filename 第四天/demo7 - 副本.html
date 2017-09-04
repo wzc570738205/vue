@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    .router-link-active{
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <div id="box" >
+     <router-link :to="{name:'home'}">首页</router-link>
+     <router-link :to="{name:'user'}">用户</router-link>
+         <router-view name="page"></router-view>
+     <router-view></router-view>
+ </div>
+ <template id="new">
+    <div>
+        <h2>用户列表</h2>
+        <router-link :to="{name:'user.child',params:{username:username}}">用户</router-link>
+    
+        <router-view></router-view>
+
+    </div>
+</template>
+<template id="child">
+    <div>
+        {{$route.params.username}}
+    </div>
+</template>
+
+<script src="../js/vue.js"></script>
+<script src="../js/vue-router.js"></script>
+
+<script type="text/javascript">
+
+    var Home = {
+        template:  `<h2>这是首页</h2>`
+    }
+    var Footer = {
+        template:  `<h1>footer</h1>`
+    }
+    var User = {
+        template:"#new",
+        data(){
+            return{
+                username:"tom"
+            }
+        }
+    }
+    var Child = {
+        template:"#child"
+    }
+    var router = new VueRouter({
+        routes:[
+        {
+            path:"/home",
+            name:"home",
+            components:{
+                page:Home,
+                default:Footer
+            }
+        },
+        {
+            path:"/user",
+            name:"user",
+            component:User,
+            "children":[
+            {
+                path:":username",
+                name:"user.child",
+                component:Child
+            }
+            ]
+        },
+        {
+         path:"*",
+         redirect:"/home" 
+     } 
+     ]
+ })
+    var  app = new Vue({
+        router:router,
+        el:"#box",
+        data:{
+
+        },
+        methods:{
+
+        },
+        computed:{
+
+        },
+        watch:{
+
+        }
+    })
+
+</script>
+</body>
+</html>

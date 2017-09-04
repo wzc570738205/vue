@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<div id="box1" >
+	<select v-model="selected">
+		<option value="" v-for="item in list" v-bind:value="item.value">{{item.text}}</option>
+
+	</select>{{selected}}
+	</div>
+
+
+	<script src="../js/vue.js"></script>
+	<script src="../js/vue-resource.js"></script>
+	<script type="text/javascript">
+	(function(){
+			var app1 = new Vue({
+			el:"#box1",
+			data:{//数据
+				info:false,
+				selected:"C",
+				list:[
+ 					{text:"one",value:"A"},
+ 					{text:"TWO",value:"B"},
+ 					{text:"THREE",value:"C"}
+				]
+			},
+			methods:{//方法
+				ok(){
+					
+					if(this.info==true){
+						this.info=false;
+					}else{
+						this.info=true;
+					}
+				}
+			},
+			computed:{
+				
+			},
+			watch:{
+				
+			}
+		})
+	})()
+		
+	</script>
+</body>
+</html>

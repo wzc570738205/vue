@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+<div id="img"></div>
+<script src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+		/*//var url="../data/f1.json"
+		var myHeaders = new Headers();
+
+		var myInit = { method: 'GET',
+		headers: myHeaders,
+		mode: 'cors',
+		cache: 'default' };
+		var url="http://mce.mogucdn.com/jsonp/multiget/3"
+		fetch(url,myInit).then(function(response){
+			return response.json()
+		}).then(function(data) {
+			console.log(data.box);
+		}).catch(function(e) {
+			console.log("Oops, error");
+		});*/
+
+
+		$.ajax({
+			url:"http://mce.mogucdn.com/jsonp/multiget/3",
+			async:true,
+			type:"GET",
+			dataType:"jsonp", 
+			jsonp: "callback", //跨域请求的参数名，默认是callback
+			//jsonpCallback:"successCallback",    //自定义跨域参数值，回调函数名也是一样，默认为jQuery自动生成的字符串
+			  data:{
+			  	pids:14360
+			  
+			  },
+			  beforeSend: function() {
+	             //请求前的处理
+			        },
+			  success:function(data){
+			  	console.log(data.data[14360].list[0].codeImg)
+			  	var img=data.data[14360].list[0].codeImg;
+			  	$("#img").html("<img src="+img+">")
+			  }    
+			})
+
+</script>
+</body>
+</html>

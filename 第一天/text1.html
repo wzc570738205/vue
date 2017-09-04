@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="app">
+		{{message}}
+		
+	</div>
+
+
+	<div id="app-2">
+		<span v-bind:title="message">
+			鼠标悬停
+		</span>
+	</div>
+
+
+	<div id="app-3">
+		<p v-if="seen">你看到我了</p>
+	</div>
+
+	<div id="app-4">
+		<p v-for="tt in tools">
+			{{tt.txt}}
+		</p>
+	</div>
+
+	<div id="app-5">
+		<p>{{message}}</p>
+		<button v-on:click="rever">逆转消息</button>
+	</div>
+
+	<div id="app-6">
+		<p>{{message}}</p>
+		<input type="text" v-model="message">
+	</div>
+</body>
+<script src="js/vue.js"></script>
+<script type="text/javascript">
+//var txt=document.querySelector("#txt").value;
+	var app=new Vue({
+		el:"#app",
+		data:{
+			message:"txt"
+		}
+	})
+
+	var app2=new Vue({
+		el:"#app-2",
+		data:{
+			message:"家在于"+new Date()
+
+		}
+	})
+	var app3=new  Vue({
+		el:"#app-3",
+		data:{
+			seen:true
+		}
+	})
+	var app4 = new Vue({
+       el:"#app-4",
+       data:{
+       	  tools:[
+            {txt:"hahaad"},
+            {txt:"haha12"},
+            {txt:"haha132"}
+       	  ]
+       }
+
+	})
+
+	var app5=new Vue({
+		el:"#app-5",
+		data:{
+			message:"王志超"
+		},
+		methods:{
+			rever:function () {
+				this.message=this.message.split("").reverse().join("")
+			}
+		}
+	})
+	var app6=new Vue({
+		el:"#app-6",
+		data:{
+			message:"hell"
+		}
+	})
+</script>
+</html>

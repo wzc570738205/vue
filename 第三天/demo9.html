@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="js/animate.css">
+
+    <style type="text/css">
+        .router-link-active{
+            color: red;
+        }
+        .fade-enter-active{
+            animation: bounceInDown 1s;
+        }
+        .fade-leave-active{
+            animation: bounceOutLeft 0s;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" >
+
+        <router-link :to="{name:'home'}">首页</router-link>
+        <router-link :to='{name:"new"}'>新闻</router-link>
+        <transition name="fade">
+        <router-view></router-view>
+            
+        </transition>
+    </div>
+
+    <template id="home">
+
+        <h2>这是首页</h2>
+    </template>
+    <template id="new">
+
+        <h2>这是新闻页</h2>
+    </template>
+    <script src="../js/vue.js"></script>
+    <script src="../js/vue-router.js"></script>
+
+    <script type="text/javascript">
+
+var Home = {
+    template:"#home",
+
+}
+var New = {
+    template:"#new",
+    
+}
+var router  =new VueRouter({
+    routes:[
+    {
+        path:"/home",
+        name:"home",
+        components:{
+            default:Home
+        }
+    },
+    {
+        path:"/new",
+        name:"new",
+        components:{
+            default:New
+        }
+    },
+    {
+        path:"*",
+        redirect:"/home"
+    }
+    ]
+
+})
+    var app1 = new Vue({
+        router:router,
+        el:"#box1",
+        data:{//数据
+
+        },
+        methods:{//方法
+           
+        },
+        computed:{
+
+        },
+        watch:{
+
+        },
+        components:{
+           
+        }
+    })
+
+</script>
+</body>
+</html>

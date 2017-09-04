@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c58ac244-bed0-45bf-aa87-94e97f61e9b1" name="默认的" comment="">
+      <change type="NEW" beforePath="" afterPath="D:/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/第二天/demo9.html" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="拖拽.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/第二天/拖拽.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="省市联动.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/第二天/省市联动.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+              <folding>
+                <marker date="1503028251495" expanded="true" signature="881:84955" ph="{&quot;el&quot;: &quot;##app&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="923:84945" ph="{...}" />
+                <marker date="1503028251495" expanded="true" signature="1504:84931" ph="[...]" />
+                <marker date="1503028251495" expanded="true" signature="1508:1943" ph="{&quot;name&quot;: &quot;北京市&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="1947:2364" ph="{&quot;name&quot;: &quot;天津市&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="2368:6124" ph="{&quot;name&quot;: &quot;河北省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="6128:8956" ph="{&quot;name&quot;: &quot;山西省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="8960:11668" ph="{&quot;name&quot;: &quot;内蒙古&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="11672:14710" ph="{&quot;name&quot;: &quot;辽宁省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="14714:16631" ph="{&quot;name&quot;: &quot;吉林省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="16635:20072" ph="{&quot;name&quot;: &quot;黑龙江省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="20076:20526" ph="{&quot;name&quot;: &quot;上海市&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="20530:23538" ph="{&quot;name&quot;: &quot;江苏省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="23542:26115" ph="{&quot;name&quot;: &quot;浙江省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="26119:29441" ph="{&quot;name&quot;: &quot;安徽省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="29445:31762" ph="{&quot;name&quot;: &quot;福建省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="31766:34490" ph="{&quot;name&quot;: &quot;江西省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="34494:38405" ph="{&quot;name&quot;: &quot;山东省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="38409:42728" ph="{&quot;name&quot;: &quot;河南省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="42732:45961" ph="{&quot;name&quot;: &quot;湖北省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="45965:49364" ph="{&quot;name&quot;: &quot;湖南省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="49368:53303" ph="{&quot;name&quot;: &quot;广东省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="53307:56498" ph="{&quot;name&quot;: &quot;广西&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="56502:58274" ph="{&quot;name&quot;: &quot;海南省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="58278:59111" ph="{&quot;name&quot;: &quot;重庆市&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="59115:64089" ph="{&quot;name&quot;: &quot;四川省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="64093:66555" ph="{&quot;name&quot;: &quot;贵州省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="66559:70422" ph="{&quot;name&quot;: &quot;云南省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="70426:72389" ph="{&quot;name&quot;: &quot;西藏&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="72393:75156" ph="{&quot;name&quot;: &quot;陕西省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="75160:77969" ph="{&quot;name&quot;: &quot;甘肃省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="77973:79558" ph="{&quot;name&quot;: &quot;青海省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="79562:80462" ph="{&quot;name&quot;: &quot;宁夏&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="80466:83436" ph="{&quot;name&quot;: &quot;新疆&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="83440:84220" ph="{&quot;name&quot;: &quot;台湾省&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="84224:84494" ph="{&quot;name&quot;: &quot;澳门&quot;...}" />
+                <marker date="1503028251495" expanded="true" signature="84498:84929" ph="{&quot;name&quot;: &quot;香港&quot;...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/第一天/demo2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-57">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <dirStrings>
+      <dir>D:\phpStudy\WWW\vue</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="D:/" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/第二天/拖拽.html" />
+        <option value="$PROJECT_DIR$/第二天/省市联动.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/my-project/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1292" />
+    <option name="height" value="776" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="第二天" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="第一天" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="D:\phpStudy\WWW\vue" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.standard" value="D:\phpStudy\WWW\vue" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c58ac244-bed0-45bf-aa87-94e97f61e9b1" name="默认的" comment="" />
+      <created>1503022969966</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1503022969966</updated>
+      <workItem from="1503022972336" duration="5199000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5199000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1292" height="776" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1770335" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/第二天/拖拽.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第二天/demo9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第二天/demo1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第一天/demo9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第一天/demo7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第一天/demo6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第一天/demo5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第一天/demo4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第一天/demo3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第一天/demo2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第二天/省市联动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+          <folding>
+            <marker date="1503028251495" expanded="true" signature="881:84955" ph="{&quot;el&quot;: &quot;##app&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="923:84945" ph="{...}" />
+            <marker date="1503028251495" expanded="true" signature="1504:84931" ph="[...]" />
+            <marker date="1503028251495" expanded="true" signature="1508:1943" ph="{&quot;name&quot;: &quot;北京市&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="1947:2364" ph="{&quot;name&quot;: &quot;天津市&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="2368:6124" ph="{&quot;name&quot;: &quot;河北省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="6128:8956" ph="{&quot;name&quot;: &quot;山西省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="8960:11668" ph="{&quot;name&quot;: &quot;内蒙古&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="11672:14710" ph="{&quot;name&quot;: &quot;辽宁省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="14714:16631" ph="{&quot;name&quot;: &quot;吉林省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="16635:20072" ph="{&quot;name&quot;: &quot;黑龙江省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="20076:20526" ph="{&quot;name&quot;: &quot;上海市&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="20530:23538" ph="{&quot;name&quot;: &quot;江苏省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="23542:26115" ph="{&quot;name&quot;: &quot;浙江省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="26119:29441" ph="{&quot;name&quot;: &quot;安徽省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="29445:31762" ph="{&quot;name&quot;: &quot;福建省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="31766:34490" ph="{&quot;name&quot;: &quot;江西省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="34494:38405" ph="{&quot;name&quot;: &quot;山东省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="38409:42728" ph="{&quot;name&quot;: &quot;河南省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="42732:45961" ph="{&quot;name&quot;: &quot;湖北省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="45965:49364" ph="{&quot;name&quot;: &quot;湖南省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="49368:53303" ph="{&quot;name&quot;: &quot;广东省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="53307:56498" ph="{&quot;name&quot;: &quot;广西&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="56502:58274" ph="{&quot;name&quot;: &quot;海南省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="58278:59111" ph="{&quot;name&quot;: &quot;重庆市&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="59115:64089" ph="{&quot;name&quot;: &quot;四川省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="64093:66555" ph="{&quot;name&quot;: &quot;贵州省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="66559:70422" ph="{&quot;name&quot;: &quot;云南省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="70426:72389" ph="{&quot;name&quot;: &quot;西藏&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="72393:75156" ph="{&quot;name&quot;: &quot;陕西省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="75160:77969" ph="{&quot;name&quot;: &quot;甘肃省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="77973:79558" ph="{&quot;name&quot;: &quot;青海省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="79562:80462" ph="{&quot;name&quot;: &quot;宁夏&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="80466:83436" ph="{&quot;name&quot;: &quot;新疆&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="83440:84220" ph="{&quot;name&quot;: &quot;台湾省&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="84224:84494" ph="{&quot;name&quot;: &quot;澳门&quot;...}" />
+            <marker date="1503028251495" expanded="true" signature="84498:84929" ph="{&quot;name&quot;: &quot;香港&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

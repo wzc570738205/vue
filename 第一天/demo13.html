@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="box1">
+		<button data-user="zhangsan" data-age="23"  @click="btn($event)">点击</button>
+	</div>
+
+
+
+
+
+
+
+
+	<script src="js/vue.js"></script>
+	<script type="text/javascript">
+		var app1 = new Vue({
+			el:"#box1",
+			data:{//数据
+				
+			},
+			methods:{//方法
+				btn:function(e){
+					console.log(e)
+					console.log(e.srcElement.dataset)
+				}
+			}
+		})
+	</script>
+</body>
+</html>

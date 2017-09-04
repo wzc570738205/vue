@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css"></style>
+</head>
+<body>
+	<div id="box1" >
+
+		<v-wrap></v-wrap>
+	</div>
+	<template id="wrap">
+		<div>
+
+			<ul>
+				<li v-for="i in list">
+					<img :src="i.img">
+					<br>
+					名字:{{i.info}}
+					<br>价格:{{i.price}}</li>
+			</ul>
+		</div>
+	</template>
+
+	<script src="../js/vue.js"></script>
+	<script src="../js/vue-resource.js"></script>
+	<script type="text/javascript">
+
+	(function(){
+var ev =new Vue();
+		var wrap = {
+	template:"#wrap",
+	data(){
+		return{
+			list:[
+			]
+		
+		}
+	},
+	mounted(){
+				console.log("页面渲染完毕");
+				var that = this;
+				this.$http.get("../data/f1.json").then(function(data){
+							console.log(data.body.box);
+							that.list=data.body.box;
+						},function(){
+							console.log("失败")
+						})
+			}
+}
+			var app1 = new Vue({
+			el:"#box1",
+			data:{//数据
+				
+			},
+			methods:{//方法
+				
+			},
+			computed:{
+				
+			},
+			watch:{
+				
+			},
+			components:{
+				"v-wrap":wrap,
+				
+				
+			},
+			beforeCreate(){
+				console.log("实例创建前");
+
+			},
+			created(){
+				console.log("实例创建完成")
+			},
+			beforeMount(){
+				console.log("页面将要被渲染")
+			},
+			mounted(){
+				console.log("页面渲染完毕");
+				var that = this;
+				this.$http.get("../data/f1.json").then(function(data){
+							console.log(data.body.box);
+							//that.msg=data.body.box;
+						},function(){
+							console.log("失败")
+						})
+			},
+			beforeUpdate(){
+				console.log("数据更新之前")
+			},
+			updated(){
+				console.log("数据更新完成")
+			}
+		})
+	})()
+		
+	</script>
+
+</body>
+</html>

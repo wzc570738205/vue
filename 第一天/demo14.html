@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.color{
+			width: 100px;
+			height: 200px;
+		}
+		.red{
+			background: red;
+		}
+		.blue{
+			background: blue;
+		}
+	</style>
+</head>
+<body>
+	<div id="box1">
+		<div class="color" v-bind:class="{red:ok,blue:!ok}"></div>
+		<button v-on:click="btn">changecolor</button>
+	</div>
+
+
+
+
+
+
+
+
+	<script src="js/vue.js"></script>
+	<script type="text/javascript">
+		var app1 = new Vue({
+			el:"#box1",
+			data:{//数据
+				ok:false
+			},
+			methods:{//方法
+				btn:function(){
+					if(this.ok==false){
+						this.ok=true;
+					}else{
+						this.ok=false;
+					}
+				}
+			},
+			computed:{
+
+			},
+			watch:{
+
+			}
+		})
+	</script>
+</body>
+</html>

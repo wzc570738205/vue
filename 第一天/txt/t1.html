@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+    <div id="box">
+    	{{msg}}
+    	<ul>
+    		<li v-for="item in list">{{item}}</li>
+    	</ul>
+    	<button v-on:click="get()">点击</button>
+    	<button @click="get()">点击</button>
+    	<input type="text" name="" v-model="info"> <button @click="add()">添加</button>{{info}}<br>
+    	<ul>
+    		<li v-for="(item,index) in list2">{{item}}<button @click="del(index)">删除</button></li>
+    	</ul>
+     	<div data-user="wangzhichao" data-age="age" v-on:click="getdata($event)">qwee</div>	
+     	<img :src="url" v-bind:id="id">
+    </div>
+	<script src="../js/vue.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+             el:"#box",
+             data:{
+             	msg:"这是我",
+             	list:[1,2,2,3,3,3],
+             	info:"",
+             	list2:[],
+             	h2:"<h2>h2h2h2h2h2</h2>",
+             	url:"../images/t15.jpg",
+             	id:"id2"
+             },
+         methods:{
+                 get:function(){
+                 	alert(this.msg)
+                 },
+                 add:function(){
+                      this.list2.push(this.info);
+                      this.info="";
+                 },
+                 del:function(index){
+                 	this.list2.splice(index,1)
+                 },
+                 getdata:function(e){
+                 	console.log(e.srcElement.dataset)
+                 }
+         }
+
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="box1">
+		<input type="text" name="" v-model="aa">
+		{{aa}}
+	</div>
+
+
+
+
+
+
+
+
+	<script src="js/vue.js"></script>
+	<script type="text/javascript">
+		var app1 = new Vue({
+			el:"#box1",
+			data:{//数据
+				n:2,
+				msg:"西安好地方",
+				list:["apple","bnner","haha"],
+				aa:"",
+				
+			},
+			methods:{//方法
+				
+			},
+			computed:{
+				
+			}
+		})
+		/*methods
+		computed*/
+app1.$watch("aa",function(newval,oldval){
+console.log(newval+"-------"+oldval)
+})
+	</script>
+</body>
+</html>

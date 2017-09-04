@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="js/animate.css">
+    <style type="text/css">
+        .list-enter-active{
+             animation: fadeInLeft 0.2s;
+        }
+         .list-leave-active{
+             animation: bounceOutLeft 1s;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <input type="text" name="" v-model="baidu">
+        <ul>
+        <transition-group name="list">
+            <li v-if="baidu" v-for="(i,index) in list" key="index">
+                {{i}}
+            </li>
+            <!--  <li v-if="baidu" v-for="(i,index) in serch" key="index">
+               {{i}}
+            </li>  -->
+        </transition-group>    
+        </ul>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script src="../js/vue-resource.js"></script>
+
+    <script type="text/javascript">
+        var app1 = new Vue({
+            el:"#box1",
+            data:{//数据
+                baidu:"",
+                list:[],
+                list2:["adad","sgfgss","dsfgertr","ahfahoafs","safasfa","asfaff"]
+            },
+            methods:{//方法
+
+            },
+            computed:{
+                serch(){
+                    var arr=[];
+                    this.list2.forEach(function(val){
+                        if(val.indexOf(this.baidu)!=-1){
+                            arr.push(val)
+                        }
+                    }.bind(this))
+                    return arr;
+                }
+            }
+        })
+        /*methods
+        computed*/
+app1.$watch("baidu",function(newval){
+    var api="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+newval;
+    this.$http.jsonp(api,{jsonp:"cb"}).then(function(data){
+              this.list=data.body.s;
+            // console.log(data.body.s);
+    },function(err){
+        console.log(err)
+    })
+});
+
+    </script>
+</body>
+</html>

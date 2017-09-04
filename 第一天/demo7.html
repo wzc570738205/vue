@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="box1">
+		<input type="text" name="" v-model="aa">
+		<ul>
+			<li v-for="item in slist">
+				{{item}}
+			</li>
+		</ul>
+	</div>
+
+
+
+
+
+
+
+
+	<script src="js/vue.js"></script>
+	<script type="text/javascript">
+		var app1 = new Vue({
+			el:"#box1",
+			data:{//数据
+				n:2,
+				msg:"西安好地方",
+				list:["apple","bnner","haha"],
+				aa:""
+			},
+			methods:{//方法
+				fan:function(){
+				  return this.msg.split("").reverse().join("")
+				}
+			},
+			computed:{
+				c:function(){
+					return this.n+4;
+				},
+				slist:function(){
+					var arr=[];
+					this.list.forEach(function(val){
+						if(val.indexOf(this.aa) !=-1){
+							arr.push(val)
+						}
+					}.bind(this));
+					console.log(arr)
+					return arr;
+				}
+				
+			}
+		})
+		/*methods
+		computed*/
+
+	</script>
+</body>
+</html>
